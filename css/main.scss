@@ -1,3 +1,135 @@
+:root svg {
+  display: none
+}
+
+:root svg:target {
+  display: block
+}
+
+/* alegreya-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/alegreya-sans-v21-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/alegreya-sans-v21-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* alegreya-sans-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/alegreya-sans-v21-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/alegreya-sans-v21-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* alegreya-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/alegreya-sans-v21-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/alegreya-sans-v21-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* alegreya-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/Helvetica.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Helvetica.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* alegreya-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'SFProDisplay';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/SFProDisplay-Light.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/SFProDisplay-Light.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* alegreya-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'SFProDisplay';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/SFProDisplay-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/SFProDisplay-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* alegreya-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'SFProDisplay';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/SFProDisplay-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/SFProDisplay-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 .main-header {
   position: relative;
+}
+
+.cust-tabs__icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  display: block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #FF5252;
+    width: 24px;
+    height: 2px;
+    left: 50%;
+    margin-left: -12px;
+    top: 50%;
+    margin-top: -1px;
+
+    transition: all 0.4s ease-in-out;
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #FF5252;
+    width: 2px;
+    height: 24px;
+    left: 50%;
+    margin-left: -1px;
+    top: 50%;
+    margin-top: -12px;
+
+    transition: all 0.4s ease-in-out;
+    transform: rotate(-90deg);
+  }
+
+
+}
+
+
+.active .cust-tabs__icon {
+  &::after {
+    transition: all 0.4s ease-in-out;
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  &::before {
+    transition: all 0.4s ease-in-out;
+    transform: rotate(90deg);
+}
+
 }

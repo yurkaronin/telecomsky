@@ -1,4 +1,6 @@
+// объявляем класс
 class ItcAccordion {
+  // специальный метод, необходимый для создания и инициализации объектов, созданных, с помощью класса
   constructor(target, config) {
     this._el = typeof target === 'string' ? document.querySelector(target) : target;
     const defaultConfig = {
