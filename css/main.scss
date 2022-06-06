@@ -203,7 +203,7 @@
     display: flex;
     gap: 2px;
     justify-content: center;
-    // margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
   &__button {
@@ -266,6 +266,11 @@
     background-color: var(--col3);
     transition: all .3s;
 
+    @media (max-width: 425px) {
+      font-size: 20px;
+      padding: 15px 15px 15px 35px;
+    }
+
     h3 {
       font-family: inherit;
       font-style: inherit;
@@ -275,6 +280,7 @@
       text-transform: inherit;
       line-height: inherit;
       margin: 0;
+      text-align: left;
     }
 
     &:hover {
@@ -292,11 +298,23 @@
     gap: 30px;
     padding-bottom: 40px;
 
+    @media (max-width:768px) {
+      gap: 20px;
+      // flex-wrap: wrap;
+    }
+
+    @media (max-width:425px) {
+
+    }
+
   }
 
   &__item {
     position: relative;
     transition: all 3s;
+    // width: calc((100% / 3) - 10px);
+
+
 
     &::after {
       content: "";
@@ -332,6 +350,10 @@
   padding: 30px;
   border: 1px solid var(--col1);
   transition: all .3s;
+
+  @media (max-width:768px) {
+    padding: 20px;
+  }
 
   &__icon {
     width: 100px;
@@ -371,6 +393,11 @@
     color: inherit;
     margin-bottom: 15px;
 
+    @media (max-width:768px) {
+      font-size: 16px;
+    }
+
+
     b {
       font-weight: 700;
     }
@@ -388,11 +415,20 @@
       font-size: 16px;
       font-weight: normal;
 
+      @media (max-width:768px) {
+        width: 100%;
+      }
+
       strong {
         display: block;
         color: #1C202E;
         font-weight: 700;
         font-size: 20px;
+
+        @media (max-width:768px) {
+          font-size: 16px;
+          display: initial;
+        }
       }
     }
   }
@@ -442,6 +478,10 @@
       svg path {
         stroke: var(--col1);
       }
+    }
+    .cust-card__details-list li,
+    .cust-card__details-list li strong {
+      color: var(--col3);
     }
 
 
@@ -523,3 +563,40 @@
   margin: 0 auto;
   margin-bottom: 21px;
 }
+
+.cust-tabs__content-list {
+  @media (max-width:550px) {
+    flex-wrap: wrap;
+  }
+
+  .cust-card {
+    width: calc((100% / 3) - 10px);
+    @media (max-width:550px) {
+      width: 100%;
+    }
+  }
+
+  .cust-card__details-list li {
+    @media (max-width:550px) {
+      text-align: center;
+    }
+  }
+}
+
+.cust-tabs__button {
+  @media (max-width:550px) {
+    font-size: 16px;
+    padding: 15px;
+    height: auto;
+  }
+}
+
+.cust-tabs__button.active::after {
+  /* @media (max-width:550px) {
+    display: none;
+  } */
+}
+
+
+
+
