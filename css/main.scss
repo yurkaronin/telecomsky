@@ -87,6 +87,8 @@
   --col3: #ffffff;
   --col4: #E5E5E7;
   --col5: #1C202E;
+  --col6: #0765E3;
+
 
 }
 
@@ -95,11 +97,12 @@
 }
 
 .cust-tabs__icon {
-  position: relative;
   width: 24px;
   height: 24px;
   pointer-events: none;
   display: block;
+  position: absolute;
+  left: 0;
 
   &::after {
     content: "";
@@ -174,8 +177,9 @@
       display: block;
       height: 2px;
       background-color: var(--col1);
-      width: 100%;
-      margin-top: 20px;
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 18px;
     }
   }
 
@@ -199,7 +203,7 @@
     display: flex;
     gap: 2px;
     justify-content: center;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
   }
 
   &__button {
@@ -244,7 +248,7 @@
   }
 
   &__content-header {
-    padding: 30px 40px;
+    padding: 27px 40px 26px 47px;
     width: 100%;
     align-items: center;
     border: none;
@@ -366,19 +370,29 @@
     text-transform: uppercase;
     color: inherit;
     margin-bottom: 15px;
+
+    b {
+      font-weight: 700;
+    }
   }
 
   &__details-list {
     margin-bottom: 25px;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px 30px;
+    gap: 13px 30px;
 
     li {
       width: calc(50% - 15px);
+      color: var(--col2);
+      font-size: 16px;
+      font-weight: normal;
 
       strong {
         display: block;
+        color: #1C202E;
+        font-weight: 700;
+        font-size: 20px;
       }
     }
   }
@@ -451,4 +465,61 @@
 
   }
 
+}
+
+.custom-buttom {
+  width: 100%;
+  max-width: 100%;
+  height: 40px;
+  background: var(--col6);
+  border: 1px solid var(--col6);
+  border-radius: 20px;
+  color: var(--col3);
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.1s;
+
+  svg {
+    display: block;
+
+    circle {
+      fill: var(--col4);
+    }
+
+    path {
+      stroke: var(--col6);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background: var(--col1);
+    border: 1px solid var(--col1);
+
+    svg {
+      display: block;
+
+      path {
+        stroke: var(--col1);
+      }
+    }
+  }
+
+
+}
+
+.cust-subtitle {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--col2);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 21px;
 }
