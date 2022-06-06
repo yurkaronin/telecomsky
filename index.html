@@ -1893,7 +1893,7 @@
   <!-- новая вёрстка  -->
   <main class="main-content">
     <section class="cust-content">
-      <div class="wrapper">
+      <div class="wrapper container">
         <!-- шапка секции  -->
         <header class="cust-content__header">
           <h2 class="cust-content__title">Подбор тарифа</h2>
@@ -1903,161 +1903,1128 @@
         <div class="cust-tabs">
           <!-- шапка табов  -->
           <div class="cust-tabs__buttons-group">
-            <button class="cust-tabs__button active">Готовые тарифы</button>
-            <button class="cust-tabs__button">Создать тариф</button>
+            <button class="cust-tabs__button active" data-index="1" type="button">Готовые тарифы</button>
+            <button class="cust-tabs__button" data-index="2" type="button">Создать тариф</button>
           </div>
           <!-- содержимое табов  -->
 
-          <!-- аккордеон  -->
-          <button class="cust-tabs__content-header js-accordion-btn" type="button">
-            <span class="cust-tabs__icon"></span>
-            <h3>Интернет в квартиру</h3>
-          </button>
-          <div class="cust-tabs__content-body js-accordion-body">
-            <ul class="cust-tabs__content-list">
-              <li class="cust-tabs__content-item cust-card">
-                <div class="cust-card__icon">
-                  <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path
-                      d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path
-                      d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path
-                      d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
-                    <path d="M54 55V59" stroke="white" stroke-width="2" />
-                    <path d="M59 59L49 59" stroke="white" stroke-width="2" />
-                  </svg>
-                </div>
-                <h4 class="cust-card__title">FLAT-100+180TV</h4>
-                <table class="cust-card__table">
-                  <tr>
-                    <td>Скорость:
-                      <strong>100 Мбит/сек.</strong></td>
-                    <td>ТВ каналов:
-                      <strong>180</strong></td>
-                  </tr>
-                  <tr>
-                    <td>Стоимость:
-                      <strong>950 руб.</strong></td>
-                    <td></td>
-                  </tr>
-                </table>
+          <!-- отдельный таб  -->
+          <div class="cust-tabs__content active cust-accordion" data-index="1">
+            <!-- аккордеон  -->
+            <h2>Первая вкладка</h2>
+            <article class="cust-tabs__item show">
+              <button class="cust-tabs__content-header" type="button">
+                <span class="cust-tabs__icon"></span>
+                <h3>Интернет в квартиру</h3>
+              </button>
+              <div class="cust-tabs__content-body collapse">
+                <ul class="cust-tabs__content-list">
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
 
-                <a class="cust-card__btn" href="#"><span>подключить</span>
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="6" cy="6" r="6" fill="#FF5252" />
-                    <path d="M6 3L9 6L6 9" stroke="white" />
-                    <path d="M9 6H2" stroke="white" />
-                  </svg>
-                </a>
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
 
-              </li>
-              <li class="cust-tabs__content-item cust-card">
-                <div class="cust-card__icon">
-                  <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path
-                      d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path
-                      d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path
-                      d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
-                    <path d="M54 55V59" stroke="white" stroke-width="2" />
-                    <path d="M59 59L49 59" stroke="white" stroke-width="2" />
-                  </svg>
-                </div>
-                <h4 class="cust-card__title">FLAT-100+180TV</h4>
-                <table class="cust-card__table">
-                  <tr>
-                    <td>Скорость:
-                      <strong>100 Мбит/сек.</strong></td>
-                    <td>ТВ каналов:
-                      <strong>180</strong></td>
-                  </tr>
-                  <tr>
-                    <td>Стоимость:
-                      <strong>950 руб.</strong></td>
-                    <td></td>
-                  </tr>
-                </table>
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
 
-                <a class="cust-card__btn" href="#"><span>подключить</span>
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="6" cy="6" r="6" fill="#FF5252" />
-                    <path d="M6 3L9 6L6 9" stroke="white" />
-                    <path d="M9 6H2" stroke="white" />
-                  </svg>
-                </a>
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
 
-              </li>
-              <li class="cust-tabs__content-item cust-card">
-                <div class="cust-card__icon">
-                  <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path
-                      d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path
-                      d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path
-                      d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
-                    <path d="M54 55V59" stroke="white" stroke-width="2" />
-                    <path d="M59 59L49 59" stroke="white" stroke-width="2" />
-                  </svg>
-                </div>
-                <h4 class="cust-card__title">FLAT-100+180TV</h4>
-                <table class="cust-card__table">
-                  <tr>
-                    <td>Скорость:
-                      <strong>100 Мбит/сек.</strong></td>
-                    <td>ТВ каналов:
-                      <strong>180</strong></td>
-                  </tr>
-                  <tr>
-                    <td>Стоимость:
-                      <strong>950 руб.</strong></td>
-                    <td></td>
-                  </tr>
-                </table>
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
 
-                <a class="cust-card__btn" href="#"><span>подключить</span>
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="6" cy="6" r="6" fill="#FF5252" />
-                    <path d="M6 3L9 6L6 9" stroke="white" />
-                    <path d="M9 6H2" stroke="white" />
-                  </svg>
-                </a>
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
 
-              </li>
+                  </li>
 
-            </ul>
+                </ul>
+              </div>
+            </article>
+
+            <article class="cust-tabs__item">
+              <button class="cust-tabs__content-header" type="button">
+                <span class="cust-tabs__icon"></span>
+                <h3>ИНТЕРНЕТ В КВАРТИРУ + ТВ</h3>
+              </button>
+              <div class="cust-tabs__content-body">
+                <ul class="cust-tabs__content-list">
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+
+                </ul>
+              </div>
+            </article>
+
+            <article class="cust-tabs__item">
+              <button class="cust-tabs__content-header" type="button">
+                <span class="cust-tabs__icon"></span>
+                <h3>ИНТЕРНЕТ В частный дом</h3>
+              </button>
+              <div class="cust-tabs__content-body">
+                <ul class="cust-tabs__content-list">
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+
+                </ul>
+              </div>
+            </article>
+
+            <article class="cust-tabs__item">
+              <button class="cust-tabs__content-header" type="button">
+                <span class="cust-tabs__icon"></span>
+                <h3>беспроводной ИНТЕРНЕТ В частный дом</h3>
+              </button>
+              <div class="cust-tabs__content-body">
+                <ul class="cust-tabs__content-list">
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+
+                </ul>
+              </div>
+            </article>
+
+
           </div>
+          <div class="cust-tabs__content cust-accordion" data-index="2">
+            <!-- аккордеон  -->
+            <h2>Вторая вкладка</h2>
+            <article class="cust-tabs__item show">
+              <button class="cust-tabs__content-header" type="button">
+                <span class="cust-tabs__icon"></span>
+                <h3>Интернет в квартиру</h3>
+              </button>
+              <div class="cust-tabs__content-body collapse">
+                <ul class="cust-tabs__content-list">
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+
+                </ul>
+              </div>
+            </article>
+
+            <article class="cust-tabs__item">
+              <button class="cust-tabs__content-header" type="button">
+                <span class="cust-tabs__icon"></span>
+                <h3>ИНТЕРНЕТ В КВАРТИРУ + ТВ</h3>
+              </button>
+              <div class="cust-tabs__content-body">
+                <ul class="cust-tabs__content-list">
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+
+                </ul>
+              </div>
+            </article>
+
+            <article class="cust-tabs__item">
+              <button class="cust-tabs__content-header" type="button">
+                <span class="cust-tabs__icon"></span>
+                <h3>ИНТЕРНЕТ В частный дом</h3>
+              </button>
+              <div class="cust-tabs__content-body">
+                <ul class="cust-tabs__content-list">
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+
+                </ul>
+              </div>
+            </article>
+
+            <article class="cust-tabs__item">
+              <button class="cust-tabs__content-header" type="button">
+                <span class="cust-tabs__icon"></span>
+                <h3>беспроводной ИНТЕРНЕТ В частный дом</h3>
+              </button>
+              <div class="cust-tabs__content-body">
+                <ul class="cust-tabs__content-list">
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="cust-card">
+                    <div class="cust-card__icon">
+                      <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                        <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
+                        <path d="M54 55V59" stroke="white" stroke-width="2" />
+                        <path d="M59 59L49 59" stroke="white" stroke-width="2" />
+                      </svg>
+                    </div>
+                    <h4 class="cust-card__title">FLAT-100+180TV</h4>
+                    <ul class="cust-card__details-list">
+                      <li>Скорость:
+                        <strong>100 Мбит/сек.</strong></li>
+                        <li>ТВ каналов:
+                          <strong>180</strong></li>
+                          <li>Стоимость:
+                            <strong>950 руб.</strong></li>
+                    </ul>
+
+                    <a class="cust-card__btn" href="#"><span>подключить</span>
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="#FF5252" />
+                        <path d="M6 3L9 6L6 9" stroke="white" />
+                        <path d="M9 6H2" stroke="white" />
+                      </svg>
+                    </a>
+
+                  </li>
+
+                </ul>
+              </div>
+            </article>
 
 
+          </div>
 
         </div>
 
@@ -2065,95 +3032,6 @@
       </div>
     </section>
 
-    <div id="accordion" class="accordion" style="max-width: 30rem; margin: 1rem auto;">
-      <div class="accordion__item">
-        <div class="accordion__header">
-          Заголовок 1
-        </div>
-        <div class="accordion__body">
-          <div class="accordion__content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consequuntur autem, mollitia rem aperiam
-            fugit eos officia vel quidem quis officiis dolores porro beatae veritatis tenetur. Culpa ex libero a!
-          </div>
-          <ul class="cust-tabs__content-list">
-
-            <li class="cust-tabs__content-item cust-card">
-              <div class="cust-card__icon">
-                <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M53.3819 8.5654C60.4486 14.0367 65 22.7329 65 32.4214H48.57C48.57 28.2692 46.8347 24.7398 44.0868 22.2567L53.3819 8.5654Z"
-                    stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                  <path
-                    d="M33.2569 1C27.6567 1 22.4159 2.52663 17.9243 5.17438L27.2208 18.7398C29.0438 17.8443 31.087 17.3266 33.2569 17.3266C35.4281 17.3266 37.4712 17.8429 39.2943 18.7398L48.5908 5.17438C44.0992 2.52525 38.8584 1 33.2569 1Z"
-                    stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                  <path d="M16.3201 32.4215H1.00011C1.00011 22.7329 5.15602 14.2568 12.0779 8.89758L20.4983 21.3488"
-                    stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                  <path
-                    d="M16.32 24.1169L29.1804 28.1294C30.8099 27.1356 32.892 26.9502 34.743 27.8332C37.6426 29.2145 38.8654 32.6706 37.4755 35.5508C36.0856 38.4325 32.6079 39.6477 29.7083 38.265C27.8573 37.382 26.7 35.6533 26.459 33.7681L14.9272 26.8851L16.32 24.1169Z"
-                    stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                  <path
-                    d="M17.7086 37.9578H1.13794C1.91508 46.5142 6.23255 54.0561 12.6182 59L21.9132 45.3308C19.8005 43.4221 18.2964 40.9045 17.7086 37.9578Z"
-                    stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                  <rect x="43" y="38" width="22" height="16" stroke="white" stroke-width="2" />
-                  <path d="M54 55V59" stroke="white" stroke-width="2" />
-                  <path d="M59 59L49 59" stroke="white" stroke-width="2" />
-                </svg>
-              </div>
-              <h4 class="cust-card__title">FLAT-100+180TV</h4>
-              <table class="cust-card__table">
-                <tr>
-                  <td>Скорость:
-                    <strong>100 Мбит/сек.</strong></td>
-                  <td>ТВ каналов:
-                    <strong>180</strong></td>
-                </tr>
-                <tr>
-                  <td>Стоимость:
-                    <strong>950 руб.</strong></td>
-                  <td></td>
-                </tr>
-              </table>
-
-              <a class="cust-card__btn" href="#"><span>подключить</span>
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="6" cy="6" r="6" fill="#FF5252" />
-                  <path d="M6 3L9 6L6 9" stroke="white" />
-                  <path d="M9 6H2" stroke="white" />
-                </svg>
-              </a>
-
-            </li>
-
-          </ul>
-        </div>
-      </div>
-      <div class="accordion__item">
-        <div class="accordion__header">
-          Заголовок 2
-        </div>
-        <div class="accordion__body">
-          <div class="accordion__content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos a autem perspiciatis sit eum
-            exercitationem expedita omnis ipsam voluptate veritatis dolores similique eligendi, earum quasi officia in
-            facilis dolorum!
-          </div>
-        </div>
-      </div>
-      <div class="accordion__item">
-        <div class="accordion__header">
-          Заголовок 3
-        </div>
-        <div class="accordion__body">
-          <div class="accordion__content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta pariatur dolore consectetur perferendis
-            libero
-            nam sit magni voluptatibus voluptates autem nesciunt, praesentium quidem deserunt ipsa totam esse ullam?
-            Quod,
-            maiores!
-          </div>
-        </div>
-      </div>
-    </div>
   </main>
 
   <footer class="main-footer">
