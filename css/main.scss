@@ -577,6 +577,7 @@ input[type=radio].visually-hidden {
   display: block;
   margin: 0 auto;
   margin-bottom: 21px;
+  margin-top: 40px;
 }
 
 .cust-tabs__content-list {
@@ -886,5 +887,17 @@ input[type=radio].visually-hidden {
     flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 40px;
+  }
+}
+
+.cust-sect__wrapper {
+  margin-top: 27px;
+  margin-bottom: 27px;
+  .cust-content__title {
+    margin-bottom: 0;
+  }
+  .cust-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
