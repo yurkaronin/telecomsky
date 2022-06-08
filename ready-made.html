@@ -12,619 +12,6 @@
     content="Интернет для бизнеса ★★★ SkyTelecom Краснодар ★★★ Подключение интернета, телефонии и других услуг связи для юридических лиц в Краснодаре ☛ Специальные цены для корпоративных клиентов ☛ Звоните ☎ +7 (861) 200-11-10 ☛ (Пн-Пт с 9:00 до 18:00).">
 
   <meta name="robots" content="index, follow">
-  <script type="text/javascript" data-skip-moving="true">
-    (function (w, d, n) {
-
-      var cl = "bx-core";
-      var ht = d.documentElement;
-      var htc = ht ? ht.className : undefined;
-      if (htc === undefined || htc.indexOf(cl) !== -1) {
-        return;
-      }
-
-      var ua = n.userAgent;
-      if (/(iPad;)|(iPhone;)/i.test(ua)) {
-        cl += " bx-ios";
-      } else if (/Android/i.test(ua)) {
-        cl += " bx-android";
-      }
-
-      cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");
-
-      cl += w.devicePixelRatio && w.devicePixelRatio >= 2 ?
-        " bx-retina" :
-        " bx-no-retina";
-
-      var ieVersion = -1;
-      if (/AppleWebKit/.test(ua)) {
-        cl += " bx-chrome";
-      } else if ((ieVersion = getIeVersion()) > 0) {
-        cl += " bx-ie bx-ie" + ieVersion;
-        if (ieVersion > 7 && ieVersion < 10 && !isDoctype()) {
-          cl += " bx-quirks";
-        }
-      } else if (/Opera/.test(ua)) {
-        cl += " bx-opera";
-      } else if (/Gecko/.test(ua)) {
-        cl += " bx-firefox";
-      }
-
-      if (/Macintosh/i.test(ua)) {
-        cl += " bx-mac";
-      }
-
-      ht.className = htc ? htc + " " + cl : cl;
-
-      function isDoctype() {
-        if (d.compatMode) {
-          return d.compatMode == "CSS1Compat";
-        }
-
-        return d.documentElement && d.documentElement.clientHeight;
-      }
-
-      function getIeVersion() {
-        if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)) {
-          return -1;
-        }
-
-        var rv = -1;
-        if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)) {
-          rv = 11;
-        } else if (!!d.documentMode && d.documentMode >= 10) {
-          rv = 10;
-        } else if (!!d.documentMode && d.documentMode >= 9) {
-          rv = 9;
-        } else if (d.attachEvent && !/Opera/.test(ua)) {
-          rv = 8;
-        }
-
-        if (rv == -1 || rv == 8) {
-          var re;
-          if (n.appName == "Microsoft Internet Explorer") {
-            re = new RegExp("MSIE ([0-9]+[\.0-9]*)");
-            if (re.exec(ua) != null) {
-              rv = parseFloat(RegExp.$1);
-            }
-          } else if (n.appName == "Netscape") {
-            rv = 11;
-            re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");
-            if (re.exec(ua) != null) {
-              rv = parseFloat(RegExp.$1);
-            }
-          }
-        }
-
-        return rv;
-      }
-
-    })(window, document, navigator);
-
-  </script>
-
-
-  <style type="text/css" data-tippy-stylesheet="">
-    .tippy-iOS {
-      cursor: pointer !important;
-      -webkit-tap-highlight-color: transparent
-    }
-
-    .tippy-popper {
-      transition-timing-function: cubic-bezier(.165, .84, .44, 1);
-      max-width: calc(100% - 8px);
-      pointer-events: none;
-      outline: 0
-    }
-
-    .tippy-popper[x-placement^=top] .tippy-backdrop {
-      border-radius: 40% 40% 0 0
-    }
-
-    .tippy-popper[x-placement^=top] .tippy-roundarrow {
-      bottom: -7px;
-      bottom: -6.5px;
-      -webkit-transform-origin: 50% 0;
-      transform-origin: 50% 0;
-      margin: 0 3px
-    }
-
-    .tippy-popper[x-placement^=top] .tippy-roundarrow svg {
-      position: absolute;
-      left: 0;
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg)
-    }
-
-    .tippy-popper[x-placement^=top] .tippy-arrow {
-      border-top: 8px solid #333;
-      border-right: 8px solid transparent;
-      border-left: 8px solid transparent;
-      bottom: -7px;
-      margin: 0 3px;
-      -webkit-transform-origin: 50% 0;
-      transform-origin: 50% 0
-    }
-
-    .tippy-popper[x-placement^=top] .tippy-backdrop {
-      -webkit-transform-origin: 0 25%;
-      transform-origin: 0 25%
-    }
-
-    .tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible] {
-      -webkit-transform: scale(1) translate(-50%, -55%);
-      transform: scale(1) translate(-50%, -55%)
-    }
-
-    .tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden] {
-      -webkit-transform: scale(.2) translate(-50%, -45%);
-      transform: scale(.2) translate(-50%, -45%);
-      opacity: 0
-    }
-
-    .tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible] {
-      -webkit-transform: translateY(-10px);
-      transform: translateY(-10px)
-    }
-
-    .tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: translateY(-20px);
-      transform: translateY(-20px)
-    }
-
-    .tippy-popper[x-placement^=top] [data-animation=perspective] {
-      -webkit-transform-origin: bottom;
-      transform-origin: bottom
-    }
-
-    .tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible] {
-      -webkit-transform: perspective(700px) translateY(-10px);
-      transform: perspective(700px) translateY(-10px)
-    }
-
-    .tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: perspective(700px) rotateX(60deg);
-      transform: perspective(700px) rotateX(60deg)
-    }
-
-    .tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible] {
-      -webkit-transform: translateY(-10px);
-      transform: translateY(-10px)
-    }
-
-    .tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: translateY(-10px);
-      transform: translateY(-10px)
-    }
-
-    .tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible] {
-      -webkit-transform: translateY(-10px);
-      transform: translateY(-10px)
-    }
-
-    .tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden] {
-      opacity: 0
-    }
-
-    .tippy-popper[x-placement^=top] [data-animation=scale] {
-      -webkit-transform-origin: bottom;
-      transform-origin: bottom
-    }
-
-    .tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible] {
-      -webkit-transform: translateY(-10px);
-      transform: translateY(-10px)
-    }
-
-    .tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: translateY(-10px) scale(.5);
-      transform: translateY(-10px) scale(.5)
-    }
-
-    .tippy-popper[x-placement^=bottom] .tippy-backdrop {
-      border-radius: 0 0 30% 30%
-    }
-
-    .tippy-popper[x-placement^=bottom] .tippy-roundarrow {
-      top: -7px;
-      -webkit-transform-origin: 50% 100%;
-      transform-origin: 50% 100%;
-      margin: 0 3px
-    }
-
-    .tippy-popper[x-placement^=bottom] .tippy-roundarrow svg {
-      position: absolute;
-      left: 0
-    }
-
-    .tippy-popper[x-placement^=bottom] .tippy-arrow {
-      border-bottom: 8px solid #333;
-      border-right: 8px solid transparent;
-      border-left: 8px solid transparent;
-      top: -7px;
-      margin: 0 3px;
-      -webkit-transform-origin: 50% 100%;
-      transform-origin: 50% 100%
-    }
-
-    .tippy-popper[x-placement^=bottom] .tippy-backdrop {
-      -webkit-transform-origin: 0 -50%;
-      transform-origin: 0 -50%
-    }
-
-    .tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible] {
-      -webkit-transform: scale(1) translate(-50%, -45%);
-      transform: scale(1) translate(-50%, -45%)
-    }
-
-    .tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden] {
-      -webkit-transform: scale(.2) translate(-50%);
-      transform: scale(.2) translate(-50%);
-      opacity: 0
-    }
-
-    .tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible] {
-      -webkit-transform: translateY(10px);
-      transform: translateY(10px)
-    }
-
-    .tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: translateY(20px);
-      transform: translateY(20px)
-    }
-
-    .tippy-popper[x-placement^=bottom] [data-animation=perspective] {
-      -webkit-transform-origin: top;
-      transform-origin: top
-    }
-
-    .tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible] {
-      -webkit-transform: perspective(700px) translateY(10px);
-      transform: perspective(700px) translateY(10px)
-    }
-
-    .tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: perspective(700px) rotateX(-60deg);
-      transform: perspective(700px) rotateX(-60deg)
-    }
-
-    .tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible] {
-      -webkit-transform: translateY(10px);
-      transform: translateY(10px)
-    }
-
-    .tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: translateY(10px);
-      transform: translateY(10px)
-    }
-
-    .tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible] {
-      -webkit-transform: translateY(10px);
-      transform: translateY(10px)
-    }
-
-    .tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden] {
-      opacity: 0
-    }
-
-    .tippy-popper[x-placement^=bottom] [data-animation=scale] {
-      -webkit-transform-origin: top;
-      transform-origin: top
-    }
-
-    .tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible] {
-      -webkit-transform: translateY(10px);
-      transform: translateY(10px)
-    }
-
-    .tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: translateY(10px) scale(.5);
-      transform: translateY(10px) scale(.5)
-    }
-
-    .tippy-popper[x-placement^=left] .tippy-backdrop {
-      border-radius: 50% 0 0 50%
-    }
-
-    .tippy-popper[x-placement^=left] .tippy-roundarrow {
-      right: -12px;
-      -webkit-transform-origin: 33.33333333% 50%;
-      transform-origin: 33.33333333% 50%;
-      margin: 3px 0
-    }
-
-    .tippy-popper[x-placement^=left] .tippy-roundarrow svg {
-      position: absolute;
-      left: 0;
-      -webkit-transform: rotate(90deg);
-      transform: rotate(90deg)
-    }
-
-    .tippy-popper[x-placement^=left] .tippy-arrow {
-      border-left: 8px solid #333;
-      border-top: 8px solid transparent;
-      border-bottom: 8px solid transparent;
-      right: -7px;
-      margin: 3px 0;
-      -webkit-transform-origin: 0 50%;
-      transform-origin: 0 50%
-    }
-
-    .tippy-popper[x-placement^=left] .tippy-backdrop {
-      -webkit-transform-origin: 50% 0;
-      transform-origin: 50% 0
-    }
-
-    .tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible] {
-      -webkit-transform: scale(1) translate(-50%, -50%);
-      transform: scale(1) translate(-50%, -50%)
-    }
-
-    .tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden] {
-      -webkit-transform: scale(.2) translate(-75%, -50%);
-      transform: scale(.2) translate(-75%, -50%);
-      opacity: 0
-    }
-
-    .tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible] {
-      -webkit-transform: translateX(-10px);
-      transform: translateX(-10px)
-    }
-
-    .tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: translateX(-20px);
-      transform: translateX(-20px)
-    }
-
-    .tippy-popper[x-placement^=left] [data-animation=perspective] {
-      -webkit-transform-origin: right;
-      transform-origin: right
-    }
-
-    .tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible] {
-      -webkit-transform: perspective(700px) translateX(-10px);
-      transform: perspective(700px) translateX(-10px)
-    }
-
-    .tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: perspective(700px) rotateY(-60deg);
-      transform: perspective(700px) rotateY(-60deg)
-    }
-
-    .tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible] {
-      -webkit-transform: translateX(-10px);
-      transform: translateX(-10px)
-    }
-
-    .tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: translateX(-10px);
-      transform: translateX(-10px)
-    }
-
-    .tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible] {
-      -webkit-transform: translateX(-10px);
-      transform: translateX(-10px)
-    }
-
-    .tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden] {
-      opacity: 0
-    }
-
-    .tippy-popper[x-placement^=left] [data-animation=scale] {
-      -webkit-transform-origin: right;
-      transform-origin: right
-    }
-
-    .tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible] {
-      -webkit-transform: translateX(-10px);
-      transform: translateX(-10px)
-    }
-
-    .tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: translateX(-10px) scale(.5);
-      transform: translateX(-10px) scale(.5)
-    }
-
-    .tippy-popper[x-placement^=right] .tippy-backdrop {
-      border-radius: 0 50% 50% 0
-    }
-
-    .tippy-popper[x-placement^=right] .tippy-roundarrow {
-      left: -12px;
-      -webkit-transform-origin: 66.66666666% 50%;
-      transform-origin: 66.66666666% 50%;
-      margin: 3px 0
-    }
-
-    .tippy-popper[x-placement^=right] .tippy-roundarrow svg {
-      position: absolute;
-      left: 0;
-      -webkit-transform: rotate(-90deg);
-      transform: rotate(-90deg)
-    }
-
-    .tippy-popper[x-placement^=right] .tippy-arrow {
-      border-right: 8px solid #333;
-      border-top: 8px solid transparent;
-      border-bottom: 8px solid transparent;
-      left: -7px;
-      margin: 3px 0;
-      -webkit-transform-origin: 100% 50%;
-      transform-origin: 100% 50%
-    }
-
-    .tippy-popper[x-placement^=right] .tippy-backdrop {
-      -webkit-transform-origin: -50% 0;
-      transform-origin: -50% 0
-    }
-
-    .tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible] {
-      -webkit-transform: scale(1) translate(-50%, -50%);
-      transform: scale(1) translate(-50%, -50%)
-    }
-
-    .tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden] {
-      -webkit-transform: scale(.2) translate(-25%, -50%);
-      transform: scale(.2) translate(-25%, -50%);
-      opacity: 0
-    }
-
-    .tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible] {
-      -webkit-transform: translateX(10px);
-      transform: translateX(10px)
-    }
-
-    .tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: translateX(20px);
-      transform: translateX(20px)
-    }
-
-    .tippy-popper[x-placement^=right] [data-animation=perspective] {
-      -webkit-transform-origin: left;
-      transform-origin: left
-    }
-
-    .tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible] {
-      -webkit-transform: perspective(700px) translateX(10px);
-      transform: perspective(700px) translateX(10px)
-    }
-
-    .tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: perspective(700px) rotateY(60deg);
-      transform: perspective(700px) rotateY(60deg)
-    }
-
-    .tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible] {
-      -webkit-transform: translateX(10px);
-      transform: translateX(10px)
-    }
-
-    .tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: translateX(10px);
-      transform: translateX(10px)
-    }
-
-    .tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible] {
-      -webkit-transform: translateX(10px);
-      transform: translateX(10px)
-    }
-
-    .tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden] {
-      opacity: 0
-    }
-
-    .tippy-popper[x-placement^=right] [data-animation=scale] {
-      -webkit-transform-origin: left;
-      transform-origin: left
-    }
-
-    .tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible] {
-      -webkit-transform: translateX(10px);
-      transform: translateX(10px)
-    }
-
-    .tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden] {
-      opacity: 0;
-      -webkit-transform: translateX(10px) scale(.5);
-      transform: translateX(10px) scale(.5)
-    }
-
-    .tippy-tooltip {
-      position: relative;
-      color: #fff;
-      border-radius: .25rem;
-      font-size: .875rem;
-      padding: .3125rem .5625rem;
-      line-height: 1.4;
-      text-align: center;
-      background-color: #333
-    }
-
-    .tippy-tooltip[data-size=small] {
-      padding: .1875rem .375rem;
-      font-size: .75rem
-    }
-
-    .tippy-tooltip[data-size=large] {
-      padding: .375rem .75rem;
-      font-size: 1rem
-    }
-
-    .tippy-tooltip[data-animatefill] {
-      overflow: hidden;
-      background-color: initial
-    }
-
-    .tippy-tooltip[data-interactive],
-    .tippy-tooltip[data-interactive] .tippy-roundarrow path {
-      pointer-events: auto
-    }
-
-    .tippy-tooltip[data-inertia][data-state=visible] {
-      transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11)
-    }
-
-    .tippy-tooltip[data-inertia][data-state=hidden] {
-      transition-timing-function: ease
-    }
-
-    .tippy-arrow,
-    .tippy-roundarrow {
-      position: absolute;
-      width: 0;
-      height: 0
-    }
-
-    .tippy-roundarrow {
-      width: 18px;
-      height: 7px;
-      fill: #333;
-      pointer-events: none
-    }
-
-    .tippy-backdrop {
-      position: absolute;
-      background-color: #333;
-      border-radius: 50%;
-      width: calc(110% + 2rem);
-      left: 50%;
-      top: 50%;
-      z-index: -1;
-      transition: all cubic-bezier(.46, .1, .52, .98);
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden
-    }
-
-    .tippy-backdrop:after {
-      content: "";
-      float: left;
-      padding-top: 100%
-    }
-
-    .tippy-backdrop+.tippy-content {
-      transition-property: opacity;
-      will-change: opacity
-    }
-
-    .tippy-backdrop+.tippy-content[data-state=hidden] {
-      opacity: 0
-    }
-
-  </style>
   <link href="./index_files/ui.font.opensans.min.css" type="text/css" rel="stylesheet">
   <link href="./index_files/main.popup.bundle.min.css" type="text/css" rel="stylesheet">
   <link href="./index_files/slimselect.min.css" type="text/css" rel="stylesheet">
@@ -633,40 +20,6 @@
   <link href="./index_files/template_9c598524418f950048800ab56cf9cccb_v1.css" type="text/css" data-template-style="true"
     rel="stylesheet">
 
-
-  <style>
-    .banner_second .banner__bg {
-      background-image: url(/upload/uf/590/bg_banner_internet.jpg)
-    }
-
-    .banner_second .banner__description {
-      background-image: url(/upload/uf/8be/internet_wave.png)
-    }
-
-  </style>
-  <script data-skip-moving="true">
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KPX937X');
-
-  </script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPX937X" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -699,7 +52,7 @@
             <article class="cust-accordion show">
               <button class="cust-accordion__button" type="button">
                 <span class="cust-accordion__icon"></span>
-                <h3 class="cust-accordion__title">Интернет в квартиру</h3>
+                <span class="cust-accordion__title">Интернет в квартиру</span>
               </button>
               <div class="cust-accordion__content collapse">
 
@@ -838,7 +191,7 @@
             <article class="cust-accordion">
               <button class="cust-accordion__button" type="button">
                 <span class="cust-accordion__icon"></span>
-                <h3 class="cust-accordion__title">ИНТЕРНЕТ В КВАРТИРУ + ТВ</h3>
+                <span class="cust-accordion__title">ИНТЕРНЕТ В КВАРТИРУ + ТВ</span>
               </button>
               <div class="cust-accordion__content">
                 <ul class="cust-promo">
@@ -976,7 +329,7 @@
             <article class="cust-accordion">
               <button class="cust-accordion__button" type="button">
                 <span class="cust-accordion__icon"></span>
-                <h3 class="cust-accordion__title">ИНТЕРНЕТ В частный дом</h3>
+                <span class="cust-accordion__title">ИНТЕРНЕТ В частный дом</span>
               </button>
               <div class="cust-accordion__content">
                 <ul class="cust-promo">
@@ -1114,7 +467,7 @@
             <article class="cust-accordion">
               <button class="cust-accordion__button" type="button">
                 <span class="cust-accordion__icon"></span>
-                <h3 class="cust-accordion__title">беспроводной ИНТЕРНЕТ В частный дом</h3>
+                <span class="cust-accordion__title">беспроводной ИНТЕРНЕТ В частный дом</span>
               </button>
               <div class="cust-accordion__content">
                 <ul class="cust-promo">
@@ -1276,7 +629,7 @@
                   </header>
                   <!-- первый блок опций  -->
                   <div class="cust-constructor__options-group options-group">
-                    <input class="options-group__switsh visually-hidden" type="checkbox" name="" id="cust-router13"
+                    <input class="options-group__switsh visually-hidden" type="checkbox" name="internet-connection" id="cust-router13"
                       checked>
                     <label class="options-group__label" for="cust-router13">Доступ в сеть Интернет</label>
                     <!-- контент с опциями которые скрываются  -->
@@ -1366,7 +719,7 @@
 
                   <!-- второй блок опций  -->
                   <div class="cust-constructor__options-group options-group">
-                    <input class="options-group__switsh visually-hidden" type="checkbox" name="" id="cust-router2-1">
+                    <input class="options-group__switsh visually-hidden" type="checkbox" name="interactive-tv" id="cust-router2-1">
                     <label class="options-group__label" for="cust-router2-1">Интерактивное ТВ</label>
                     <!-- контент с опциями которые скрываются  -->
                     <div class="options-group__body">
@@ -1402,7 +755,7 @@
 
                   <!-- третий блок опций  -->
                   <div class="cust-constructor__options-group options-group">
-                    <input class="options-group__switsh visually-hidden" type="checkbox" name="" id="cust-router2-44">
+                    <input class="options-group__switsh visually-hidden" type="checkbox" name="new-gadget" id="cust-router2-44">
                     <label class="options-group__label" for="cust-router2-44">Устройства для ТВ</label>
                     <!-- контент с опциями которые скрываются  -->
                     <div class="options-group__body">
@@ -1426,7 +779,7 @@
                           <li class="cust-num-field">
                             <div class="cust-num-field__wrapper">
                               <button class="cust-num-field__btn" type="button" data-index="minus">-</button>
-                              <input class="cust-num-field__input" type="number" class="quantity" value="1" min="1"
+                              <input class="cust-num-field__input" type="number" value="1" min="1"
                                 max="222" id="cust-router2-7">
                               <button class="cust-num-field__btn" type="button" data-index="plus">+</button>
                             </div>
