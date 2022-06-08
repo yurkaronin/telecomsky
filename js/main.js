@@ -56,26 +56,38 @@ for (let custTabsButton of custTabsButtons) {
 
 
 const NumFields = document.querySelectorAll('.cust-num-field');
+
+for (let NumField of NumFields) {
+  document.onclick = function () {
+    if (Number(NumField.querySelector('.cust-num-field__input').value) <= 1) {
+      document.querySelector("[data-index='minus']").disabled = true;
+    } else {
+      document.querySelector("[data-index='minus']").disabled = false;
+    }
+  }
+
+}
+
+
+
 if (NumFields) {
   for (let NumField of NumFields) {
     let numFieldBtns = NumField.querySelectorAll('.cust-num-field__btn');
     let numFieldInput = NumField.querySelector('.cust-num-field__input');
+
     for (let numFieldBtn of numFieldBtns) {
       numFieldBtn.onclick = function () {
-        if (Number(numFieldInput.value) < 0) {
-          numFieldInput.value = 0;
-          // document.querySelector('.cust-num-field__btn[data-content="data-from-min"]').disabled = true;
+
+        if (numFieldBtn.getAttribute('data-index') == 'plus') {
+          numFieldInput.value = (Number(numFieldInput.value) + 1);
+          //
+        } else {
+          numFieldInput.value = (Number(numFieldInput.value) - 1);
+          // document.querySelector("[data-index='minus']").disabled = false;
 
         }
-        else {
-          if (numFieldBtn.getAttribute('data-index') == 'plus') {
-            numFieldInput.value = (Number(numFieldInput.value) + 1);
-          } else {
-            numFieldInput.value = (Number(numFieldInput.value) - 1);
 
-          }
 
-        }
         // console.log(numFieldInput.value);
       }
     }
