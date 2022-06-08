@@ -1,0 +1,58 @@
+.cust-tabs__buttons-group {
+  margin: 0 auto;
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.cust-tabs__button {
+  width: 50%;
+  font-family: HelveticaRegular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--col5);
+  background-color: transparent;
+  border-radius: 0;
+  border: 1px solid var(--col1);
+  border-color: var(--col4);
+  padding: 20px;
+  height: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+
+  &.active {
+    background-color: var(--col1);
+    border-color: var(--col1);
+    color: var(--col3);
+
+    // декоративный элемент: стрелка
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 10px 0 10px;
+      border-color: var(--col1) transparent transparent transparent;
+      position: absolute;
+      bottom: -10px;
+    }
+  }
+
+}
+
+.cust-tabs__content {
+  display: none;
+  margin-bottom: 27px;
+}
+
+.cust-tabs__content.active {
+  display: block;
+}

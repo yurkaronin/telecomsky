@@ -1,0 +1,91 @@
+.cust-form-area {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--col2);
+
+
+  label {
+    font-family: inherit;
+    position: relative;
+    padding-left: 40px;
+    display: block;
+    line-height: 1.8;
+
+    strong {
+      color: var(--col5);
+      font-weight: 700;
+
+    }
+  }
+
+  input[type=checkbox]+label::before,
+  input[type=radio]+label::before {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '';
+    background-repeat: no-repeat;
+  }
+
+  input[type=checkbox]+label::before {
+    background-image: url(../img/icons/checkbox-off.svg);
+  }
+
+  input[type=checkbox]:checked+label::before {
+    width: 21px;
+    background-image: url(../img/icons/checkbox-on.svg);
+  }
+
+  input[type=checkbox]+label:hover:before {
+    background-image: url(../img/icons/checkbox-off-hover.svg);
+  }
+
+  input[type=checkbox]:checked+label::before {
+    background-image: url(../img/icons/checkbox-on.svg);
+  }
+
+  input[type=radio]+label::before {
+    background-image: url(../img/icons/radio-off.svg);
+  }
+
+  input[type=radio]:checked+label::before {
+    width: 21px;
+    background-image: url(../img/icons/radio-on.svg);
+  }
+
+  input[type=radio]+label:hover:before {
+    background-image: url(../img/icons/radio-off-hover.svg);
+  }
+
+  input[type=radio]:checked+label::before {
+    background-image: url(../img/icons/radio-on.svg);
+  }
+}
+
+.cust-form-area {
+  span {
+    max-width: 390px;
+    width: 100%;
+  }
+
+  b {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+    margin-left: 70px;
+    color: #1C202E;
+    max-width: 390px;
+    width: 100%;
+  }
+}
+
+.cust-form-area input[type=radio]:checked+label b,
+.cust-form-area input[type=checkbox]:checked+label b {
+  color: #ffffff;
+}

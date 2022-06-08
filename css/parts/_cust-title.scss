@@ -1,0 +1,25 @@
+.cust-title {
+  font-family: var(--ff3);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--col5);
+  position: relative;
+  max-width: max-content;
+  margin: 0 auto;
+  margin-bottom: 17px;
+
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--col1);
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 18px;
+  }
+}

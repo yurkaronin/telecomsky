@@ -1,0 +1,144 @@
+.cust-accordion {
+  position: relative;
+  transition: all 3s;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: var(--col1);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &:last-of-type {
+    &::after {
+      background-color: var(--col4);
+
+    }
+
+  }
+
+}
+
+.cust-accordion__footer {
+  margin-top: 27px;
+}
+
+.cust-accordion__button {
+  padding: 27px 40px 26px 47px;
+  width: 100%;
+  align-items: center;
+  border: none;
+  font-family: var(--ff3);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35px;
+  color: var(--col5);
+  text-transform: uppercase;
+  line-height: 1.5;
+  display: flex;
+  gap: 24px;
+  cursor: pointer;
+  position: relative;
+  background-color: var(--col3);
+  transition: all .3s;
+
+  @media (max-width: 425px) {
+    font-size: 20px;
+    padding: 15px 15px 15px 35px;
+  }
+
+  &:hover {
+    color: var(--col1);
+  }
+}
+
+.cust-accordion__title {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-transform: inherit;
+  line-height: inherit;
+  margin: 0;
+  text-align: left;
+}
+
+.cust-accordion__icon {
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  left: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: var(--col1);
+    width: 24px;
+    height: 2px;
+    left: 50%;
+    margin-left: -12px;
+    top: 50%;
+    margin-top: -1px;
+
+    transition: all 0.4s ease-in-out;
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: var(--col1);
+    width: 2px;
+    height: 24px;
+    left: 50%;
+    margin-left: -1px;
+    top: 50%;
+    margin-top: -12px;
+
+    transition: all 0.4s ease-in-out;
+    transform: rotate(-90deg);
+  }
+
+}
+
+
+.active .cust-accordion__icon {
+  &::after {
+    transition: all 0.4s ease-in-out;
+    transform: rotate(90deg);
+  }
+
+  &::before {
+    transition: all 0.4s ease-in-out;
+    transform: rotate(90deg);
+  }
+}
+
+.cust-accordion.show {
+  .cust-accordion__icon::after {
+    transform: rotate(180deg);
+  }
+
+}
+
+.cust-accordion__content {
+  max-height: 0;
+  pointer-events: none;
+  overflow: hidden;
+  transition: max-height 0.5s;
+
+  &.collapse {
+    max-height: 1000px;
+    pointer-events: initial;
+    transition: max-height 0.7s;
+  }
+}
