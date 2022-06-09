@@ -10,6 +10,25 @@
     }
   }
 
+   // ОБНУЛЯЕМ ЧИСЛО В ПОЛЕ, ЕСЛИ ОПЦИЮ ОТКЛЮЧИЛИ
+   if (groupSwitsh) {
+    for (let groupSwitshItem of groupSwitsh) {
+      groupSwitshItem.onclick = function () {
+        let parent = groupSwitshItem.closest('.options-group');
+        console.log(parent);
+        if (!groupSwitshItem.checked) {
+          console.log('отключён!');
+          parent.querySelector("[data-index='minus']").disabled = true;
+          parent.querySelector('.cust-num-field__input').value = '0';
+
+        } else {
+          console.log('Включён');
+        }
+      }
+
+    }
+  }
+
 // НАВЕШИВАЕМ СОБЫТИЕ КЛИКА НА КАЖДЫЙ ЭЛЕМЕНТ КОЛЛЕКЦИИ
   if (optionsGroup) {
     for (let optionsGroupItem of optionsGroup) {

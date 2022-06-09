@@ -13,6 +13,7 @@ for (let custTabsItem of custTabsItems) {
       for (let elem of custTabsItems) {
         elem.classList.remove('show');
         elem.querySelector('.cust-accordion__content').classList.remove('collapse');
+
       }
       custTabsItem.classList.add('show');
       custTabsItem.querySelector('.cust-accordion__content').classList.toggle('collapse');
