@@ -79,6 +79,7 @@
     background-repeat: no-repeat;
     background: #FF5252;
     border-radius: 10px;
+    transition-duration: 300ms;
   }
 
   &::after {
@@ -110,4 +111,9 @@
   }
 }
 
-.options-group__list {}
+.options-group__label:hover,
+.options-group__label:focus {
+  &::before {
+    background: #0765E3;
+  }
+}
