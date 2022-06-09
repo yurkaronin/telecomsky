@@ -28,8 +28,9 @@
 
 .cust-promo__card {
   padding: 30px;
-  border: 1px solid var(--col1);
-  transition: all .3s;
+  border: 1px solid;
+  border-color: var(--col1);
+  transition: all .5s;
 
   @media (max-width:768px) {
     padding: 20px;
@@ -51,7 +52,7 @@
 
   svg {
     display: block;
-    transition: all .3s;
+    transition: all 0.5s;
 
     path,
     rect {
@@ -74,6 +75,8 @@
   text-transform: uppercase;
   color: inherit;
   margin-bottom: 15px;
+  transition: all .1s;
+  transition-delay: none;
 
   @media (max-width:768px) {
     font-size: 16px;
@@ -96,6 +99,7 @@
     color: var(--col2);
     font-size: 16px;
     font-weight: normal;
+    transition: all .3s;
 
     @media (max-width:768px) {
       width: 100%;
@@ -103,9 +107,10 @@
 
     strong {
       display: block;
-      color: var(--col5);
+      color: inherit;
       font-weight: 700;
       font-size: 20px;
+      transition: all .3s;
 
       @media (max-width:768px) {
         font-size: 16px;
@@ -128,6 +133,14 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  transition: all .1s;
+  transition-delay: 0s;
+
+  span {
+    transition: all .1s;
+    transition-delay: 0s;
+    animation-delay: 0s;
+  }
 
   svg {
     display: block;
@@ -138,22 +151,27 @@
 .cust-promo__card:focus {
   background-color: var(--col1);
   color: var(--col3);
+  transition: all .3s;
 
   .cust-promo__icon {
     background-color: var(--col3);
+    transition: all .3s;
 
     svg path,
     svg rect {
       stroke: var(--col1);
+      transition: all .3s;
     }
   }
 
   .cust-promo__icon {
     background-color: var(--col3);
+    transition: all .3s;
 
     svg path,
     svg rect {
       stroke: var(--col1);
+      transition: all .3s;
     }
   }
 
@@ -161,19 +179,23 @@
     background: var(--col1);
     border-color: var(--col3);
     color: inherit;
+    transition: all .3s;
 
     svg circle {
       fill: var(--col3);
+      transition: all .3s;
     }
 
     svg path {
       stroke: var(--col1);
+      transition: all .3s;
     }
   }
 
   .cust-promo__details-list li,
   .cust-promo__details-list li strong {
     color: var(--col3);
+    transition: all .3s;
   }
 
 
