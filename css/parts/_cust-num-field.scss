@@ -71,13 +71,28 @@
   font-size: 22px;
   font-weight: 500;
   text-align: center;
+  transition-duration: 300ms;
+
+  &:hover {
+    width: 36px;
+    height: 36px;
+    left: 2px;
+  }
 
   &[data-index='plus'] {
     right: 5px;
     left: auto;
+
+    &:hover {
+      width: 36px;
+      height: 36px;
+      right: 2px;
+    }
   }
 
   &:disabled {
     opacity: 0.3;
   }
+
+
 }

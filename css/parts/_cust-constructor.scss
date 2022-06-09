@@ -8,5 +8,9 @@
 
   .cust-title {
     font-size: 35px;
+
+    &::after {
+      display: none;
+    }
   }
 }
