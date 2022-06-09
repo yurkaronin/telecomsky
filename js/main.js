@@ -3,6 +3,12 @@ const custTabsItems = document.querySelectorAll('.cust-accordion');
 const custTabsButtons = document.querySelectorAll('.cust-tabs__button');
 const custAccordions = document.querySelectorAll('.cust-tabs__content');
 const NumFields = document.querySelectorAll('.cust-num-field');
+const optionsGroup = document.querySelectorAll('.options-group');
+const custNumFieldInput = document.querySelectorAll('.cust-num-field__input');
+const custNumFieldBtn = document.querySelectorAll(".cust-num-field__btn");
+
+
+
 
 // функция подключения скриптов
 function include(url) {
