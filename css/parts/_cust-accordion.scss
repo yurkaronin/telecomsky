@@ -29,7 +29,7 @@
 }
 
 .cust-accordion__button {
-  padding: 27px 40px 26px 47px;
+  padding: 20px 40px 24px 47px;
   width: 100%;
   align-items: center;
   border: none;
@@ -46,6 +46,7 @@
   position: relative;
   background-color: var(--col3);
   transition: all .3s;
+  margin-top: 7px;
 
   @media (max-width: 425px) {
     font-size: 20px;

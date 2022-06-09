@@ -69,8 +69,11 @@
 
 .cust-form-area {
   span {
-    max-width: 390px;
+    max-width: 460px;
     width: 100%;
+    font-size: 18px;
+    line-height: 1;
+    font-family: HelveticaRegular, sans-serif;
   }
 
   b {
@@ -78,10 +81,7 @@
     font-weight: 700;
     font-size: 20px;
     margin: 0;
-    margin-left: 70px;
     color: #1C202E;
-    max-width: 390px;
-    width: 100%;
   }
 }
 

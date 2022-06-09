@@ -1,16 +1,24 @@
 .cust-constructor {
-
-  .cust-content__header {
-    margin-top: 27px;
-    margin-bottom: 27px;
-
-  }
-
   .cust-title {
     font-size: 35px;
+    margin-bottom: 8px;
 
     &::after {
       display: none;
     }
+
+    .tarif-price {
+      padding: 40px 0 0;
+    }
+
   }
+
+  .cust-content__header {
+    margin-top: 52px;
+    margin-bottom: 21px;
+  }
+}
+
+.cust-constructor__options-group {
+  padding-top: 0;
 }
