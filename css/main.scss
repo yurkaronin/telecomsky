@@ -122,7 +122,7 @@
 }
 
 .container--mod {
-  max-width: 970px;
+  max-width: calc(970px + 30px);
   margin: 0 auto;
 }
 
