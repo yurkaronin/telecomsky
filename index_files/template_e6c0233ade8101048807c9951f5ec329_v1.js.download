@@ -3847,7 +3847,7 @@ function _typeof2(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "funct
   if (t.console = t.console || {
     info: function info(t) {}
   }, n) {
-    if (n.fn.fancybox) return void console.info("fancyBox already initialized");
+    if (n.fn.fancybox) return void console.info();
 
     var a = {
       closeExisting: !1,

@@ -15,14 +15,10 @@
     for (let groupSwitshItem of groupSwitsh) {
       groupSwitshItem.onclick = function () {
         let parent = groupSwitshItem.closest('.options-group');
-        console.log(parent);
         if (!groupSwitshItem.checked) {
-          console.log('отключён!');
           parent.querySelector("[data-index='minus']").disabled = true;
           parent.querySelector('.cust-num-field__input').value = '0';
 
-        } else {
-          console.log('Включён');
         }
       }
 

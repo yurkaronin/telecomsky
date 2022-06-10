@@ -920,7 +920,7 @@ address {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-image: url(/assets/css/../img/sprite/ico-check-blue.svg);
+  background-image: url(../img/assets/img/ico-check-blue.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
@@ -1105,19 +1105,19 @@ address {
 .form-input.input-default:before {
   width: 16px;
   height: 16px;
-  background-image: url(/assets/css/../img/sprite/ico-form-name.svg)
+  background-image: url(../img/assets/img/sprite/ico-form-name.svg)
 }
 
 .form-input.input-tel:before {
   width: 20px;
   height: 20px;
-  background-image: url(/assets/css/../img/sprite/ico-form-phone.svg)
+  background-image: url(../img/assets/img/sprite/ico-form-phone.svg)
 }
 
 .form-input.input-email:before {
   width: 18px;
   height: 12px;
-  background-image: url(/assets/css/../img/sprite/ico-form-mail.svg)
+  background-image: url(../img/assets/img/sprite/ico-form-mail.svg)
 }
 
 .form-input__label {
@@ -1379,7 +1379,7 @@ address {
   display: none;
   width: 12px;
   height: 7px;
-  background-image: url(/assets/css/../img/sprite/ico-arrow-blue.svg);
+  background-image: url(../img/assets/img/sprite/ico-arrow-blue.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
@@ -1633,7 +1633,7 @@ address {
   right: 0;
   width: 13px;
   height: 8px;
-  background-image: url(/assets/css/../img/sprite/ico-checkbox.svg);
+  background-image: url(../img/assets/img/sprite/ico-checkbox.svg);
   background-repeat: no-repeat;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2209,7 +2209,7 @@ body.compensate-for-scrollbar {
   display: block;
   width: 12px;
   height: 6px;
-  background-image: url(/assets/css/../img/sprite/ico-arrow-menu.svg);
+  background-image: url(../img/ico-arrow-menu.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transform: translateY(-50%);
@@ -2826,14 +2826,14 @@ body.compensate-for-scrollbar {
   right: 0;
   left: 0;
   bottom: 0;
-  background-image: url(/assets/css/../img/header-banner-lazy.jpg);
+  background-image: url(../img/assets/img/header-banner-lazy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%
 }
 
 .banner__bg.visible {
-  background-image: url(/assets/css/../img/header-banner.jpg)
+  background-image: url(../img/assets/img/header-banner.jpg)
 }
 
 .banner__arrow-down {
@@ -3097,7 +3097,7 @@ body.compensate-for-scrollbar {
   width: 100%;
   min-height: 370px;
   padding: 70px 15px;
-  background-image: url(/assets/css/../img/wave-bg@2x.png);
+  background-image: url(../img/assets/img/wave-bg@2x.png);
   background-repeat: no-repeat;
   background-size: 100% 480px;
   background-position: 50% 55%
@@ -3127,7 +3127,7 @@ body.compensate-for-scrollbar {
 .banner_second .banner__bg {
   height: 100%;
   background-color: #080c1b;
-  background-image: url(/assets/css/../img/bg-banner-phone.jpg);
+  background-image: url(../img/assets/img/bg-banner-phone.jpg);
   background-size: cover;
   background-position: 50% 0;
   -webkit-transition: height .5s;
@@ -3382,7 +3382,7 @@ body.compensate-for-scrollbar {
   flex-shrink: 0;
   width: 15px;
   height: 15px;
-  background-image: url(/assets/css/../img/sprite/ico-tooltip.svg);
+  background-image: url(../img/assets/img/sprite/ico-tooltip.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -3821,7 +3821,7 @@ body.compensate-for-scrollbar {
 }
 
 .tariff-item:hover .tariff-item__btn:after {
-  background-image: url(/assets/css/../img/sprite/ico-check-white.svg)
+  background-image: url(../img/assets/img/sprite/ico-check-white.svg)
 }
 
 .tariff-item:hover .tariff-item__features {
@@ -3905,7 +3905,7 @@ body.compensate-for-scrollbar {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-image: url(/assets/css/../img/sprite/ico-check-pink.svg)
+  background-image: url(../img/assets/img/sprite/ico-check-pink.svg)
 }
 
 .tariff-item__features {
@@ -3939,14 +3939,14 @@ body.compensate-for-scrollbar {
 .qualities-block {
   padding-top: 10px;
   padding-bottom: 40px;
-  background-image: url(/assets/css/../img/qualities-bg-lazy.jpg);
+  background-image: url(../img/assets/img/qualities-bg-lazy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%
 }
 
 .qualities-block.visible {
-  background-image: url(/assets/css/../img/qualities-bg.jpg)
+  background-image: url(../img/assets/img/qualities-bg.jpg)
 }
 
 .qualities-block .section-title {
@@ -4267,7 +4267,7 @@ body.compensate-for-scrollbar {
   display: block;
   width: 12px;
   height: 10px;
-  background-image: url(/assets/css/../img/sprite/ico-arrow-pink.svg);
+  background-image: url(../img/assets/img/sprite/ico-arrow-pink.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transform: rotate(-90deg);
@@ -4276,7 +4276,7 @@ body.compensate-for-scrollbar {
 }
 
 .articles-list .btn_icon:hover:before {
-  background-image: url(/assets/css/../img/sprite/ico-arrow.svg)
+  background-image: url(../img/assets/img/sprite/ico-arrow.svg)
 }
 
 .main-page-form {
@@ -4316,14 +4316,14 @@ body.compensate-for-scrollbar {
 
 .main-page-form:after {
   left: 0;
-  background-image: url(/assets/css/../img/half-logo-left.svg);
+  background-image: url(../img/assets/img/half-logo-left.svg);
   background-size: cover;
   background-position: 100% 55%
 }
 
 .main-page-form:before {
   right: 0;
-  background-image: url(/assets/css/../img/half-logo-right.svg);
+  background-image: url(../img/assets/img/half-logo-right.svg);
   background-size: cover;
   background-position: 0 35%
 }
@@ -4816,7 +4816,7 @@ body.compensate-for-scrollbar {
   content: '';
   width: 12px;
   height: 5px;
-  background-image: url(/assets/css/../img/sprite/ico-arrow-pink.svg);
+  background-image: url(../img/assets/img/sprite/ico-arrow-pink.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transform: rotate(-90deg);
@@ -4826,7 +4826,7 @@ body.compensate-for-scrollbar {
 
 .work-list__btn:hover::after {
   content: '';
-  background-image: url(/assets/css/../img/sprite/ico-arrow-white.svg)
+  background-image: url(../img/assets/img/sprite/ico-arrow-white.svg)
 }
 
 .main-work-block {
@@ -4865,7 +4865,7 @@ body.compensate-for-scrollbar {
   display: block;
   width: 12px;
   height: 8px;
-  background-image: url(/assets/css/../img/sprite/ico-arrow-pink.svg);
+  background-image: url(../img/assets/img/sprite/ico-arrow-pink.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transform: rotate(-90deg);
@@ -4874,7 +4874,7 @@ body.compensate-for-scrollbar {
 }
 
 .main-work-block__btn:hover::after {
-  background-image: url(/assets/css/../img/sprite/ico-arrow-white.svg)
+  background-image: url(../img/assets/img/sprite/ico-arrow-white.svg)
 }
 
 .main-work-block__nav {
@@ -4949,11 +4949,11 @@ body.compensate-for-scrollbar {
 }
 
 .tariff-table__btn .btn_icon {
-  background-image: url(/assets/css/../img/sprite.svg#ico-check-pink)
+  background-image: url(../img/assets/img/sprite.svg#ico-check-pink)
 }
 
 .tariff-table__btn .btn_icon:hover {
-  background-image: url(/assets/css/../img/sprite.svg#ico-check-white)
+  background-image: url(../img/assets/img/sprite.svg#ico-check-white)
 }
 
 .tariff-table_horizontal .tariff-table__wrapper {
@@ -5161,7 +5161,7 @@ body.compensate-for-scrollbar {
   display: block;
   width: 12px;
   height: 8px;
-  background-image: url(/assets/css/../img/sprite/ico-arrow-pink.svg);
+  background-image: url(../img/assets/img/sprite/ico-arrow-pink.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transform: rotate(-90deg);
@@ -5170,7 +5170,7 @@ body.compensate-for-scrollbar {
 }
 
 .related-products__btn .btn_icon:hover::after {
-  background-image: url(/assets/css/../img/sprite/ico-arrow-white.svg)
+  background-image: url(../img/assets/img/sprite/ico-arrow-white.svg)
 }
 
 .main-products-block {
@@ -5411,7 +5411,7 @@ body.compensate-for-scrollbar {
   display: block;
   width: 12px;
   height: 8px;
-  background-image: url(/assets/css/../img/sprite/ico-arrow-pink.svg);
+  background-image: url(../img/assets/img/sprite/ico-arrow-pink.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transform: rotate(-90deg);
@@ -5420,7 +5420,7 @@ body.compensate-for-scrollbar {
 }
 
 .main-products-list__btn .btn_icon:hover::before {
-  background-image: url(/assets/css/../img/sprite/ico-arrow-white.svg)
+  background-image: url(../img/assets/img/sprite/ico-arrow-white.svg)
 }
 
 .main-products-list__btn-tech {
@@ -5666,7 +5666,7 @@ body.compensate-for-scrollbar {
 .slider-article__nav {
   width: 15px;
   height: 28px;
-  background-image: url(/assets/css/../img/sprite/ico-arrow-shadow.svg);
+  background-image: url(../img/assets/img/sprite/ico-arrow-shadow.svg);
   background-size: cover
 }
 
@@ -5766,7 +5766,7 @@ body.compensate-for-scrollbar {
   left: 0;
   width: 20px;
   height: 20px;
-  background-image: url(/assets/css/../img/sprite/ico-download.svg);
+  background-image: url(../img/assets/img/sprite/ico-download.svg);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%)
@@ -5883,7 +5883,7 @@ body.compensate-for-scrollbar {
   position: relative;
   padding-top: 108px;
   background-color: #1c202e;
-  background-image: url(/assets/css/../img/footer-bg.jpg);
+  background-image: url(../img/assets/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%
@@ -6028,7 +6028,7 @@ body.compensate-for-scrollbar {
   left: -4px;
   width: 9px;
   height: 9px;
-  background-image: url(/assets/css/../img/sprite/ico-location.svg);
+  background-image: url(../img/assets/img/ico-location.svg);
   background-position: 0 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -6049,7 +6049,7 @@ body.compensate-for-scrollbar {
   left: -2px;
   width: 9px;
   height: 9px;
-  background-image: url(/assets/css/../img/sprite/phone.svg);
+  background-image: url(../img/assets/img/phone.svg);
   background-position: 0 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -6071,7 +6071,7 @@ body.compensate-for-scrollbar {
   left: -5px;
   width: 10px;
   height: 6px;
-  background-image: url(/assets/css/../img/sprite/ico-mail.svg);
+  background-image: url(../img/assets/img/ico-mail.svg);
   background-position: 0 50%;
   background-repeat: no-repeat;
   background-size: contain;
