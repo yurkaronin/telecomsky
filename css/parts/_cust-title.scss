@@ -23,3 +23,9 @@
     margin-top: 18px;
   }
 }
+
+.cust-title--clear {
+  &::after {
+    display: none;
+  }
+}

@@ -5,14 +5,17 @@
   font-size: 16px;
   line-height: 1.2;
   color: var(--col2);
+  // display: flex;
+  // align-items: center;
+  margin-bottom: 15px !important;
 
 
   label {
     font-family: inherit;
     position: relative;
     padding-left: 40px;
-    display: block;
     line-height: 1.8;
+    display: block;
 
     strong {
       color: var(--col5);
@@ -24,7 +27,7 @@
   input[type=checkbox]+label::before,
   input[type=radio]+label::before {
     position: absolute;
-    top: 4px;
+    // top: 10px;
     left: 0;
     width: 20px;
     height: 20px;

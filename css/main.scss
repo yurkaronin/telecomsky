@@ -99,9 +99,9 @@
 
 .cust-details {
   display: flex;
-  margin-top: 17px;
+  margin-top: 30px;
   gap: 30px;
-  margin-bottom: 45px;
+  margin-bottom: 0;
 }
 
 .cust-details__list {
@@ -113,11 +113,12 @@
     font-size: 16px;
     line-height: 1.2;
     color: var(--col2);
-    margin-bottom: 20px;
+    margin-bottom: 26px;
 
     strong {
       font-weight: 700;
       color: #1C202E;
+      font-size: 20px;
     }
   }
 }
@@ -160,15 +161,25 @@
 
   .cust-details {
     margin: 0;
-    padding-bottom: 55px;
+    padding-bottom: 31px;
     margin-bottom: 0;
     border-bottom: 1px solid #E5E5E7;
+  }
+
+  .form-options__title {
+    font-size: 35px;
+    margin-bottom: 22px;
+  }
+
+  .cust-form-area label {
+    display: flex;
+    align-items: center;
   }
 
 }
 
 .tarif-price {
-  padding: 60px 0;
+  padding: 40px 0;
 
   .cust-details {
     margin: 0;
@@ -179,6 +190,11 @@
   padding: 50px 0 55px;
   background-color: #F4F4F5;
   color: #1C202E;
+}
+
+.personal-form .cust-title {
+  font-size: 35px;
+  margin-bottom: 32px;
 }
 
 .personal-form__input {

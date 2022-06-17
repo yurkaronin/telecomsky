@@ -1,6 +1,6 @@
 .options-group {
   border-bottom: 1px solid #E5E5E7;
-  padding: 30px 0 15px;
+  padding: 34px 0 11px;
 
   &:first-of-type {
     padding-top: 0;
@@ -10,12 +10,10 @@
 .options-group__wrap {
   border: none;
   padding: 0;
-  // max-width: 1030px;
-  // margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   .cust-form-area {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 
     &:last-of-type {
       margin-bottom: 0;
