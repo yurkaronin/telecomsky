@@ -11,11 +11,12 @@
 
 
   label {
-    font-family: inherit;
     position: relative;
     padding-left: 40px;
     line-height: 1.8;
     display: block;
+    font-family: var(--ff3);
+    font-size: 16px;
 
     strong {
       color: var(--col5);
@@ -27,7 +28,7 @@
   input[type=checkbox]+label::before,
   input[type=radio]+label::before {
     position: absolute;
-    // top: 10px;
+    top: 5px;
     left: 0;
     width: 20px;
     height: 20px;

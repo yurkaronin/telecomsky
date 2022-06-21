@@ -11,8 +11,6 @@
 @import "parts/cust-form-area";
 @import "parts/cust-num-field";
 
-
-@import "parts/cust-main";
 @import "parts/cust-content";
 @import "parts/cust-constructor";
 
@@ -46,6 +44,7 @@
   justify-content: center;
   gap: 10px;
   transition: all 0.1s;
+  cursor: pointer;
 
   svg {
     display: block;
@@ -119,6 +118,7 @@
       font-weight: 700;
       color: #1C202E;
       font-size: 20px;
+      align-self: stretch;
     }
   }
 }
@@ -173,7 +173,9 @@
 
   .cust-form-area label {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0 9px;
   }
 
 }
@@ -187,7 +189,7 @@
 }
 
 .personal-form {
-  padding: 50px 0 55px;
+  padding: 50px 0 65px;
   background-color: #F4F4F5;
   color: #1C202E;
 }
@@ -227,7 +229,7 @@
     width: calc(50% - 15px);
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 26px;
 
     input {
       width: 100%;
@@ -248,7 +250,7 @@
 }
 
 .personal-form__form {
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 @media (max-width:500px) {
@@ -335,5 +337,42 @@
     flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 40px;
+  }
+}
+
+.cust-main--personal {
+  padding-top: 35px;
+}
+
+.cust-main {
+  margin: 20px 0 36px;
+  margin-bottom: 18px;
+}
+
+.cust-main--mb-zero {
+  margin-bottom: 0;
+}
+
+.cust-main--pt {
+  margin-top: 48px;
+
+  .tarif-price {
+    padding: 60px 0 32px;
+  }
+}
+
+.cust-constructor__options-group .cust-form-area {
+  margin-bottom: 2px !important;
+}
+
+.options-group__wrap .cust-form-area label {
+  min-height: 40px;
+  line-height: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  span,
+  b {
+    line-height: 1;
   }
 }
