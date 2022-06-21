@@ -201,3 +201,15 @@
 
 
 }
+
+
+@media (max-width: 650px) {
+  .cust-promo {
+    flex-wrap: wrap;
+  }
+  .cust-promo__card {
+    width: 100%;
+    max-width: 425px;
+    margin: 0 auto;
+  }
+}

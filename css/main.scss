@@ -376,3 +376,158 @@
     line-height: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .options-group__body {
+
+    .cust-form-area label {
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    span {
+      width: calc(100% - 150px - 55px - 12px);
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    b {
+      width: 150px;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .options-group__wrap .cust-form-area input[type=radio]+label::before,
+    .options-group__wrap .cust-form-area input[type=checkbox]+label::before {
+      left: 20px;
+    }
+
+    .options-group__wrap .cust-form-area label {
+      padding-left: 55px;
+    }
+  }
+
+  .tarif-price {
+    .cust-details--mod li {
+      margin-bottom: 0;
+    }
+  }
+
+  .cust-content--mod {
+    padding-bottom: 30px;
+  }
+
+  .options-group__body .options-group__wrap .cust-form-area label {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .options-group__body {
+    span {
+      font-size: 16px;
+      width: calc(100% - 130px - 32px);
+    }
+
+    b {
+      font-size: 16px;
+      width: 150px;
+    }
+  }
+
+  .cust-constructor {
+    .container {
+      padding: 0;
+    }
+  }
+
+  .options-group__label {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .options-group__body .options-group__wrap .cust-form-area input[type=radio]+label::before,
+  .options-group__body .options-group__wrap .cust-form-area input[type=checkbox]+label::before {
+    left: 10px;
+  }
+
+  .options-group__title {
+    font-size: 20px;
+  }
+
+  .cust-num-field__wrapper {
+    margin-left: 0;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+  .cust-constructor {
+    container {
+      padding: 0;
+    }
+  }
+
+  .options-group__body span {
+    width: 100%;
+  }
+
+  .cust-main {
+    margin-top: 14px;
+  }
+
+  .cust-title {
+    font-size: 31px;
+  }
+
+  .cust-title::after {
+    margin-top: 14px;
+  }
+
+  .cust-details {
+    margin-top: 24px;
+  }
+
+  .tarif-price {
+    padding: 30px 0;
+
+    .cust-details--mod li {
+      flex-direction: row;
+    }
+
+    .cust-details--mod {
+      width: 100%;
+      gap: 32px;
+      flex-direction: column;
+      display: flex;
+    }
+  }
+
+  .cust-details--mod li strong {
+    font-size: 25px;
+  }
+
+  .personal-form {
+    padding: 50px 0;
+
+    .cust-title {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .cust-grid-two .cust-grid-col {
+      gap: 16px;
+    }
+
+  }
+
+  .form-options .form-options__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .cust-title {
+    font-size: 30px;
+  }
+}

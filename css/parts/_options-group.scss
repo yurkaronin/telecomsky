@@ -115,7 +115,7 @@
   }
 
   &~.options-group__body {
-    max-height: 1000px;
+    max-height: 10000px;
     transition: max-height 0.5s, opacity 0.1s cubic-bezier(1, 0, 1, 0);
     overflow: initial;
   }
